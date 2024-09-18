@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkPayment < ActiveRecord::Base
-  unloadable
+  #unloadable
   #belongs_to :account, :class_name => 'WkAccount'
   belongs_to :parent, :polymorphic => true
   belongs_to :account, -> { where(wk_payments: {parent_type: 'WkAccount'}) }, foreign_key: 'parent_id', :class_name => 'WkAccount'

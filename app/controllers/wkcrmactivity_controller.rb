@@ -17,7 +17,7 @@
 
 
 class WkcrmactivityController < WkcrmController
-  unloadable
+  #unloadable
   menu_item :wklead
   include WktimeHelper
   include WkdocumentHelper

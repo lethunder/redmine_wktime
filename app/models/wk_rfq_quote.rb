@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkRfqQuote < ActiveRecord::Base
-  unloadable
+  #unloadable
   belongs_to :quote , :class_name => 'WkInvoice'
   belongs_to :rfq , :class_name => 'WkRfq'
   after_create_commit :send_notification

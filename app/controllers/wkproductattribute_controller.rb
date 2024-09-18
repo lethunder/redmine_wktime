@@ -1,5 +1,5 @@
 class WkproductattributeController < WkinventoryController
-  unloadable
+  #unloadable
   before_action :require_login
 
   def index

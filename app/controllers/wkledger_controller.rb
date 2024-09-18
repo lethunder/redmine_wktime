@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkledgerController < WkaccountingController
-  unloadable
+  #unloadable
   menu_item :wkgltransaction
   before_action :check_ac_admin_and_redirect, :only => [:update, :destroy]
   before_action :check_perm_and_redirect, :only => [:index, :edit]

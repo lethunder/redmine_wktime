@@ -1,5 +1,5 @@
 class WkTeLock < ActiveRecord::Base
-  unloadable
+  #unloadable
    include Redmine::SafeAttributes
    belongs_to :creator, :class_name => 'User', :foreign_key => 'locked_by'
    belongs_to :updater, :class_name => 'User', :foreign_key => 'updated_by'

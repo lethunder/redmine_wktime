@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkgltransactionController < WkaccountingController
-  unloadable
+  #unloadable
   include WkgltransactionHelper
 	accept_api_auth :index, :edit, :update
 

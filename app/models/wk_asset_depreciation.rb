@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkAssetDepreciation < ActiveRecord::Base
-  unloadable
+  #unloadable
   belongs_to :inventory_item, :class_name => 'WkInventoryItem'
   belongs_to :gl_transaction , :class_name => 'WkGlTransaction'
   before_destroy :remove_entry_from_gl_transaction

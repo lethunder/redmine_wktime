@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkInvoiceItem < ActiveRecord::Base
-  unloadable
+  #unloadable
   include Redmine::SafeAttributes
   belongs_to :invoice, :class_name => 'WkInvoice'
   belongs_to :modifier, :class_name => 'User'

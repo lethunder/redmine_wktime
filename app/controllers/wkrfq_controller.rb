@@ -1,5 +1,5 @@
 class WkrfqController < WkbaseController
-  unloadable
+  #unloadable
   include WktimeHelper
   include WkorderentityHelper
   include WkrfqHelper

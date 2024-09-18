@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkdocumentController < WkbaseController
-  unloadable
+  #unloadable
   before_action :find_attachment, :only => [:destroy, :download]
   include WkdocumentHelper
   helper :attachments

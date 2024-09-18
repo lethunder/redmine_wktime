@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkSalary < ActiveRecord::Base
-  unloadable
+  #unloadable
   include Redmine::SafeAttributes
 
   belongs_to :user

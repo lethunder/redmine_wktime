@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkProductTax < ActiveRecord::Base
-  unloadable
+  #unloadable
   belongs_to :product, :class_name => 'WkProduct'
   belongs_to :tax, :class_name => 'WkTax'
 end

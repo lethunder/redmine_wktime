@@ -1,5 +1,5 @@
 class WkcrmaccountController < WkaccountController
-	unloadable
+	#unloadable
 	menu_item :wklead
 	accept_api_auth :index, :edit, :update
 

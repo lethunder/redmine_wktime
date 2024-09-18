@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkGlSalary < ActiveRecord::Base
-  unloadable
+  #unloadable
   include Redmine::SafeAttributes
   
   belongs_to :gl_transaction, foreign_key: "gl_transaction_id", class_name: "WkGlTransaction", :dependent => :destroy

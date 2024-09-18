@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class Wkexpense < Wktime
-  unloadable
+  #unloadable
   
   self.table_name = "wkexpenses"
   

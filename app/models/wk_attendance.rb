@@ -16,9 +16,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkAttendance < ActiveRecord::Base
-  unloadable
+  #unloadable
   include Redmine::SafeAttributes
-  
+  include Redmine::Acts::Customizable
+
   belongs_to :user
   
   acts_as_customizable

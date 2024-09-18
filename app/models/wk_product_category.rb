@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkProductCategory < ActiveRecord::Base
-  unloadable
+  #unloadable
   has_many :products, foreign_key: "category_id", class_name: "WkProduct", :dependent => :restrict_with_error
   
 end

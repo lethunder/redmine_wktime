@@ -1,5 +1,5 @@
 class WkexchangerateController < WkbillingController
-  unloadable
+  #unloadable
   menu_item :wkcrmenumeration
 
 	def index

@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkInventoryItem < ActiveRecord::Base
-  unloadable
+  #unloadable
   belongs_to :shipment, :class_name => 'WkShipment'
   belongs_to :product_item, :class_name => 'WkProductItem'
   belongs_to :supplier_invoice, foreign_key: "supplier_invoice_id", class_name: "WkInvoice"

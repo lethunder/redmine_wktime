@@ -16,6 +16,6 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkMesureUnit < ActiveRecord::Base
-  unloadable
+  #unloadable
   has_many :product, foreign_key: "uom_id", class_name: "WkProduct", :dependent => :restrict_with_error
 end

@@ -1,5 +1,5 @@
 class WkunitofmeasurementController < WkinventoryController
-  unloadable
+  #unloadable
   before_action :require_login
   menu_item :wkproduct
   

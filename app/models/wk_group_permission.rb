@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkGroupPermission < ActiveRecord::Base
-  unloadable
+  #unloadable
   
    belongs_to :group , :class_name => 'Group'
    belongs_to :permission , :class_name => 'WkPermission'

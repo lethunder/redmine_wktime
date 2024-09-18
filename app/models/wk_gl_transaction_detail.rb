@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkGlTransactionDetail < ActiveRecord::Base
-  unloadable
+  #unloadable
   belongs_to :ledger, :class_name => 'WkLedger'
   belongs_to :wkgltransaction, :class_name => 'WkGlTransaction', :foreign_key => 'gl_transaction_id'
 end

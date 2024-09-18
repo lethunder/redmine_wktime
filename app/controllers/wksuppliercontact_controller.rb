@@ -1,5 +1,5 @@
 class WksuppliercontactController < WkcontactController
-	unloadable
+	#unloadable
 	menu_item :wkrfq
 
 	include WktimeHelper

@@ -1,5 +1,5 @@
 class WkproductcatagoryController < WkinventoryController
-  unloadable
+  #unloadable
   before_action :require_login
 
 

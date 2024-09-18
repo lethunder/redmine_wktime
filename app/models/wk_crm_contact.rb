@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkCrmContact < ActiveRecord::Base
-  unloadable
+  #unloadable
   belongs_to :account, class_name: 'WkAccount'
   has_many :billable_projects, as: :parent, class_name: "WkAccountProject", dependent: :destroy
   belongs_to :address, class_name: 'WkAddress', dependent: :destroy

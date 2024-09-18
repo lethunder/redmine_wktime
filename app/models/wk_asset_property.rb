@@ -16,7 +16,7 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class WkAssetProperty < ActiveRecord::Base
-  unloadable
+  #unloadable
   
   belongs_to :inventory_item, :class_name => 'WkInventoryItem'
   belongs_to :material_entry, foreign_key: "matterial_entry_id", class_name: "WkMaterialEntry"

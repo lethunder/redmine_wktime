@@ -16,8 +16,9 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 class Wktime < ActiveRecord::Base
-unloadable
+#unloadable
 include Redmine::SafeAttributes
+include Redmine::Acts::Customizable
 
   belongs_to :user
   belongs_to :submitter, :class_name => 'User', :foreign_key => 'submitter_id'

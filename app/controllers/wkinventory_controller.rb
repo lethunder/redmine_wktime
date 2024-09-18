@@ -1,5 +1,5 @@
 class WkinventoryController < WkbaseController
-  unloadable
+  #unloadable
 
 before_action :require_login
 
